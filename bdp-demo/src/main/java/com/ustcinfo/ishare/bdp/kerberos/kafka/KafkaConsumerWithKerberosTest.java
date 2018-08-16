@@ -31,9 +31,9 @@ public class KafkaConsumerWithKerberosTest {
 		/**消费者组名**/
 		properties.put("group.id", "testgroup");
 		/**添加Kerberos认证所需的JAAS配置文件到运行时环境**/
-		System.setProperty("java.security.auth.login.config","/Users/shock/Documents/shockspace/bdp-demo/src/main/resources/kafka-jaas.conf");
+		System.setProperty("java.security.auth.login.config","/Users/shock/git/demo/bdp-demo/src/main/resources/kafka-jaas.conf");
 		/**添加krb5配置文件到运行时环境**/
-		System.setProperty("java.security.krb5.conf", "/Users/shock/Documents/shockspace/bdp-demo/src/main/resources/krb5.conf");
+		System.setProperty("java.security.krb5.conf", "/Users/shock/git/demo/bdp-demo/src/main/resources/krb5.conf");
 		KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(properties);
 		/**订阅的Topic**/
 		consumer.subscribe(Arrays.asList("testTopic"));

@@ -39,11 +39,11 @@ public class HbaseDaoWithKerberosTest {
 	private static Admin admin;
 
 	/** keytab文件 **/
-	private static final String KEYTAB_FILE = "/Users/shock/Documents/shockspace/bdp-demo/src/main/resources/zwang.keytab";
+	private static final String KEYTAB_FILE = "/Users/shock/git/demo/bdp-demo/src/main/resources/zwang.keytab";
 	/** 主体名，与keytab文件中的主体保持一致 **/
 	private static final String LOGIN_PRINCIPAL = "zwang@HADOOP.COM";
 	/** krb5.conf配置文件 **/
-	private static final String KRB5_CONF = "/Users/shock/Documents/shockspace/bdp-demo/src/main/resources/krb5.conf";
+	private static final String KRB5_CONF = "/Users/shock/git/demo/bdp-demo/src/main/resources/krb5.conf";
 
 	static {
 		try {
